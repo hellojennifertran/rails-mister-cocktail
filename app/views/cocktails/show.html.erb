@@ -1,3 +1,4 @@
-<%= @cocktail.name %>
+<h2><%= @cocktail.name %></h2>
 
-<%= links_to 'back to cocktails', cocktails_path %>
+<%= link_to 'back to cocktails', cocktails_path %>
+<%= link_to 'delete cocktail', cocktails_path, data: {:confirm => 'Are you sure?'}, :method => :delete %>
